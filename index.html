@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML文件</title>
+    <style>
+        /* 元素选择器 */
+        p{
+            color:blue;
+            font-size:26px;
+        }
+        /* ID选择器 */
+        .highlight{
+            background-color: yellow;
+        }
+        /* 通用选择器 */
+        *{
+          font-family:"Kaiti";  
+        }
+        /* 子元素选择器 */
+        .father > .son {
+            color:yellowgreen;
+        }
+        /* 后代选择器 */
+        .father p{
+            color:brown;
+        }
+        /* 兄弟选择器 */
+        h3 + p {
+            background-color: red;
+        }
+        /* 伪类选择器-通常用于用户交互 */
+        /* element:hover是让鼠标放上去的时候有背景颜色 */
+        #element:hover{
+            background-color: blueviolet;
+        }
+
+    </style>
+    <!-- 外部关联添加:
+    <link rel = "stylesheet" href="文件路径"> -->
+
+</head>
+<body>
+    <p style  = "color:red;" >这是一个应用了css样式的文本</p>
+    <h3 class="highlight">这是一个类选择器实例</h3>
+    <h3>这是一个类选择器实例</h3>
+    <div class="father">
+        <p class="son">这是一个子元素选择器示例</p>
+        <div>
+            <p class="grandson">这是一个后代选择器示例</p>
+        </div>
+    </div>
+    <p>这是一个普通的p标签</p>
+    <h3>这是一个相邻兄弟选择器标签</h3>
+    <p>这另一个普通的p标签</p>
+    <h3 id="element">这是一个伪类选择器示例</h3>
+</body>
+</html>
